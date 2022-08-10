@@ -1,0 +1,35 @@
+$primaryBtn: rgb(79, 32, 81);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid red;
+ }
+
+// I set up the background img for the page
+ body{
+    align-items: center;
+    background-image: url("../images/space.jpg");
+    background-position: fixed;
+    background-size: cover;
+
+    background-attachment: fixed;
+    // I am setting the parameters for all containers
+    .container{
+        // The container will get no larger than this
+        max-width: 1600px;
+        // This allow the browser to automatically center the container horizontally
+        margin: 0 auto;
+        // This will set space between the inside the container and the border
+        padding: 0px 128px 128px 0px;
+        // aligning everthing into center
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+        // this will make the element scale to size of the container
+        width:100%;
+    }
+
+ }

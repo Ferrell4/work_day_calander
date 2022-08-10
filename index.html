@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="styleSheet" href="./assets/css/main.css">
+    <title></title>
+</head>
+
+<body>
+    <header>
+        <!-- I will use this container to set the everything in the center -->
+        <div class="container">
+            <nav>
+                <h1>Work Day Scheduler</h1>
+                <h2>Current Day</h2>
+                <div class="Current_day">
+                    <script>
+                        now = new Date();
+                        localtime = now.toString();
+                        utctime = now.toGMTString();
+                        document.write("<p><strong>Local time:</strong> " + localtime + "</p>");
+                        document.write("<p><strong>UTC time:</strong> " + utctime + "</p>");
+                        hours = now.getHours();
+                        mins = now.getMinutes();
+                        secs = now.getSeconds();
+                        document.write("<h2>");
+                        document.write(hours + ":" + mins + ":" + secs);
+                        document.write("</h2>");
+                    </script>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="time_block">
+            <div class="container">
+                <h3>8am</h3>
+                <div class="8am">
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <button>save</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
