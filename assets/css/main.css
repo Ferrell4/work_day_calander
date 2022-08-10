@@ -13,7 +13,8 @@ body {
   background-size: cover;
   background-attachment: fixed;
 }
-body .container {
+
+.container {
   max-width: 1600px;
   margin: 0 auto;
   padding: 0px 128px 128px 0px;
@@ -22,4 +23,11 @@ body .container {
   justify-content: center;
   text-align: center;
   width: 100%;
+  background-color: aliceblue;
+}
+
+main .time-block .container .time-grid .eightam {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=main.css.map */
