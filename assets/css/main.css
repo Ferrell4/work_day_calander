@@ -17,7 +17,8 @@ body {
 .container {
   max-width: 1600px;
   margin: 0 auto;
-  padding: 0px 128px 128px 0px;
+  padding-left: 128px;
+  padding-right: 128px;
   align-items: center;
   align-content: center;
   justify-content: center;
@@ -26,8 +27,27 @@ body {
   background-color: aliceblue;
 }
 
-main .time-block .container .time-grid .eightam {
+main .time-block .container .time-grid {
+  align-items: center;
+}
+main .time-block .container .time-grid .am8, main .time-block .container .time-grid .am9, main .time-block .container .time-grid .am10, main .time-block .container .time-grid .am11, main .time-block .container .time-grid .pm12, main .time-block .container .time-grid .pm1, main .time-block .container .time-grid .pm2, main .time-block .container .time-grid .pm3, main .time-block .container .time-grid .pm4, main .time-block .container .time-grid .pm5 {
   display: flex;
   justify-content: center;
-  align-items: center;
+}
+main .time-block .container .time-grid .am8 h3, main .time-block .container .time-grid .am9 h3, main .time-block .container .time-grid .am10 h3, main .time-block .container .time-grid .am11 h3, main .time-block .container .time-grid .pm12 h3, main .time-block .container .time-grid .pm1 h3, main .time-block .container .time-grid .pm2 h3, main .time-block .container .time-grid .pm3 h3, main .time-block .container .time-grid .pm4 h3, main .time-block .container .time-grid .pm5 h3 {
+  margin: 0 auto;
+}
+main .time-block .container .time-grid .am8 .event, main .time-block .container .time-grid .am9 .event, main .time-block .container .time-grid .am10 .event, main .time-block .container .time-grid .am11 .event, main .time-block .container .time-grid .pm12 .event, main .time-block .container .time-grid .pm1 .event, main .time-block .container .time-grid .pm2 .event, main .time-block .container .time-grid .pm3 .event, main .time-block .container .time-grid .pm4 .event, main .time-block .container .time-grid .pm5 .event {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.past {
+  background-color: black;
+  color: white;
+}
+
+.future {
+  background-color: red;
 }/*# sourceMappingURL=main.css.map */

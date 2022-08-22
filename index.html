@@ -15,21 +15,8 @@
             <nav>
                 <h1>Work Day Scheduler</h1>
                 <h2>Current Day</h2>
-                <div class="Current-day">
-                    <script>
-                        now = new Date();
-                        localtime = now.toString();
-                        utctime = now.toGMTString();
-                        document.write("<p><strong>Local time:</strong> " + localtime + "</p>");
-                        document.write("<p><strong>UTC time:</strong> " + utctime + "</p>");
-                        hours = now.getHours();
-                        mins = now.getMinutes();
-                        secs = now.getSeconds();
-                        document.write("<h2>");
-                        document.write(hours + ":" + mins + ":" + secs);
-                        document.write("</h2>");
-                    </script>
-                </div>
+                <div id = "currentDay"></div>
+                <div id="demo"></div>
             </nav>
         </div>
     </header>
@@ -38,54 +25,54 @@
         <section class="time-block">
             <div class="container">
                 <div class="time-grid">
-                    <div class="eightam">
+                    <div class="am8">
                         <h3>8am</h3>
-                        <textarea name="" id="" cols="150" rows="10"></textarea>
+                        <textarea name="" id="" class = "event" placeholder = "enter your event"></textarea>
                         <button>save</button>
                     </div>
-                    <h3>9am</h3>
-                    <div class="9am">
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <div class="am9">
+                        <h3>9am</h3>
+                        <textarea name="" id="" class = "event" placeholder = "enter your event"></textarea>
                         <button>save</button>
                     </div>
-                    <h3>10am</h3>
-                    <div class="10am">
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <div class="am10">
+                        <h3>10am</h3>
+                        <textarea name="" id="" class = "event" placeholder = "enter your event"></textarea>
                         <button>save</button>
                     </div>
-                    <h3>11am</h3>
-                    <div class="11am">
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <div class="am11">
+                        <h3>11am</h3>
+                        <textarea name="" id="" class = "event" placeholder = "enter your event"></textarea>
                         <button>save</button>
                     </div>
-                    <h3>12am</h3>
-                    <div class="12pm">
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <div class="pm12">
+                        <h3>12am</h3>
+                        <textarea name="" id="" class = "event" placeholder = "enter your event"></textarea>
                         <button>save</button>
                     </div>
-                    <h3>1pm</h3>
-                    <div class="1pm">
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <div class="pm1">
+                        <h3>1pm</h3>
+                        <textarea name="" id="" class = "event" placeholder = "enter your event"></textarea>
                         <button>save</button>
                     </div>
-                    <h3>2pm</h3>
-                    <div class="2pm">
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <div class="pm2">
+                        <h3>2pm</h3>
+                        <textarea name="" id="" class = "event" placeholder = "enter your event"></textarea>
                         <button>save</button>
                     </div>
-                    <h3>3pm</h3>
-                    <div class="3pm">
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <div class="pm3">
+                        <h3>3pm</h3>
+                        <textarea name="" id="" class = "event" placeholder = "enter your event"></textarea>
                         <button>save</button>
                     </div>
-                    <h3>4pm</h3>
-                    <div class="4pm">
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <div class="pm4">
+                        <h3>4pm</h3>
+                        <textarea name="" id="" class = "event" placeholder = "enter your event"></textarea>
                         <button>save</button>
                     </div>
-                    <h3>5pm</h3>
-                    <div class="5pm">
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <div class="pm5">
+                        <h3>5pm</h3>
+                        <textarea name="" id="" class = "event" placeholder = "enter your event"></textarea>
                         <button>save</button>
                     </div>
                 </div>
@@ -94,6 +81,8 @@
         </section>
     </main>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 

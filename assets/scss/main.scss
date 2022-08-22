@@ -24,7 +24,8 @@ body {
   // This allow the browser to automatically center the container horizontally
   margin: 0 auto;
   // This will set space between the inside the container and the border
-  padding: 0px 128px 128px 0px;
+  padding-left: 128px;
+  padding-right: 128px;
   // aligning everthing into center
   align-items: center;
   align-content: center;
@@ -39,12 +40,28 @@ main{
     .time-block{
         .container{
             .time-grid{
-                .eightam{
+                align-items: center;
+                .am8,.am9,.am10,.am11,.pm12,.pm1,.pm2,.pm3,.pm4,.pm5{
                     display: flex;
                     justify-content: center;
-                    align-items: center;
+                    h3{
+                        margin: 0 auto;
+                    }
+                    .event{
+                        width: 100%;
+                        height: 100%;
+                        text-align: center;
+                    }
+
                 }
             }
         }
     }
+}
+.past{
+    background-color: black;
+    color:white;
+}
+.future{
+    background-color: red;
 }
