@@ -41,18 +41,11 @@ main{
         .container{
             .time-grid{
                 align-items: center;
-                .am8,.am9,.am10,.am11,.pm12,.pm1,.pm2,.pm3,.pm4,.pm5{
-                    display: flex;
-                    justify-content: center;
-                    h3{
-                        margin: 0 auto;
-                    }
-                    .event{
-                        width: 100%;
-                        height: 100%;
-                        text-align: center;
-                    }
-
+                display: grid;
+                grid-template-rows: repeat(10, 1fr);
+                .block{
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);   
                 }
             }
         }

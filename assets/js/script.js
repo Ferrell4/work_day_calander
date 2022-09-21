@@ -1,23 +1,29 @@
 $('#currentDay').html(moment().format('LLLL'));
-const time1 = 8
-const time2 = 9
-const time3 = 10
-const time4 = 11
-const time5 = 12
-const time6 = 13
-const time7 = 14
-const time8 = 15
-const time9 = 16
-const time10 = 17
-const eight = document.querySelector(".am8")
-// check for current hour
-const d = new Date();
-let hour = d.getHours();
 
-document.getElementById("demo").innerHTML = hour;
+function timeBlock() {
+    var hour = moment().hours();
+    console.log(hour);
 
-function timeBlock(){
-    if(time1 < hour){
-        eight.classList.add(".past");
-    }
-}
+    //loop to color code the times
+    $(".block").each(function () {
+        var currentHr = parseInt($(this).attr("id"));
+        console.log(currentHr);
+
+        
+        if (currentHr < hour) {
+            $(this).removeClass("future");
+            $(this).removeClass("present");
+            $(this).addClass("past");
+        } else if (currentHr == hour) {
+            $(this).removeClass("past");
+            $(this).removeClass("future");
+            $(this).addClass("present");
+        } else {
+            $(this).removeClass("present");
+            $(this).removeClass("past");
+            $(this).addClass("future");
+        }
+        console.log(this);
+    
+    })
+};
