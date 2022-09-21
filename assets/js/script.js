@@ -9,8 +9,15 @@ const time7 = 14
 const time8 = 15
 const time9 = 16
 const time10 = 17
+const eight = document.querySelector(".am8")
 // check for current hour
 const d = new Date();
 let hour = d.getHours();
 
 document.getElementById("demo").innerHTML = hour;
+
+function timeBlock(){
+    if(time1 < hour){
+        eight.classList.add(".past");
+    }
+}
