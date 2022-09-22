@@ -1,6 +1,7 @@
 $('#currentDay').html(moment().format('LLLL'));
 
 $(document).ready(function() { 
+
     function timeBlock() {
         var hour = moment().hours();
         console.log(hour);
@@ -26,4 +27,8 @@ $(document).ready(function() {
         
         })
     };
+    timeBlock();  
+    eventPlanner();
+    
+    
 })
